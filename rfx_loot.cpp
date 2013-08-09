@@ -157,11 +157,15 @@ dumb_test_good(int code)
 		return true;
 	/* PB related items */
 	case 0x2412: // t3 ruby
-	case 0x2a12: // t3 topaz
 	case 0x2712: // t3 brilliant
-	case 0x1412: // ignore
-	case 0x2012: // mercy
+	case 0x2a12: // t3 topaz	
 	case 0x2d12: // t3 obsidian
+	case 0x4412: // t5 ruby
+	case 0x4512: // t5 brilliant
+	case 0x4612: // t5 topaz	
+	case 0x4712: // t5 obsidian
+	case 0x1412: // ignore
+	case 0x2012: // mercy	
 	case 0x1200d: // rescue rune
 	case 0x1210d: // defence rune
 	case 0x2112: // restoration tallic
@@ -170,11 +174,33 @@ dumb_test_good(int code)
 	/* 50 int weapons */
 	case 0xC506:  //	iwknb50 one-handed sword
 	case 0x18D06: //	iwswb50 two-handed sword
-	case 0x4AD06: //	iwspb50 spear
+	case 0x4AD06: //	iwspb50 spear	
+	/* 50 int weapons */
+	case 0x213506: //	one-handed sword	
+	case 0x213D06: //	spear
 		return true;
 	/* misc stuff */
+	case 0x42509: //dagom amulet
+	case 0x44008: //dagnu ring
+	case 0x44108: //dagan ring
+	case 0x25814: //perfect relic seal
+	case 0x4F414: //perfect relic seal
+	case 0x441F: //relic box
+	case 0x451F: //relic box
+	case 0x461F: //relic box
 	case 0x174403: //	53 in laucher boots
 	case 0x174303: // ?? test_items says this is actual boots identifier
+		return true;
+	/* lucky boxes */
+	case 0xB71F: //small
+	case 0xB81F: //mid
+	case 0xB91F: //big
+	case 0xBA1F: //relic box
+	case 0xBB1F: //relic box
+	case 0xBC1F: //relic box
+	case 0xBD1F: //relic box
+	case 0xBE1F: //relic box
+	case 0xBF1F: //relic box
 		return true;
 	}
 	return false;
